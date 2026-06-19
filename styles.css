@@ -324,6 +324,47 @@ kbd {
   padding: 18px;
 }
 
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.article-card {
+  min-height: 260px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-card span {
+  width: fit-content;
+  background: var(--mint);
+  color: var(--green-dark);
+  border-radius: 999px;
+  padding: 4px 9px;
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+
+.article-card p {
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+
+.article-card a {
+  margin-top: auto;
+  color: var(--green-dark);
+  font-weight: 900;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
 .section-note {
   max-width: 360px;
   margin: 0;
@@ -459,6 +500,7 @@ footer {
 
   .shortcut-grid,
   .skill-grid,
+  .article-grid,
   .app-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -488,6 +530,7 @@ footer {
 
   .shortcut-grid,
   .skill-grid,
+  .article-grid,
   .app-grid,
   .rank-list {
     grid-template-columns: 1fr;

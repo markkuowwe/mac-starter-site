@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mac 新手快捷鍵與上網技能</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar" aria-label="主要導覽">
+        <a href="#shortcuts">快捷鍵</a>
+        <a href="#practice">練習路線</a>
+        <a href="#web-skills">上網技能</a>
+        <a href="#apps">推薦 App</a>
+        <a href="#sources">資料來源</a>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">給 Mac 新手的第一堂效率課</p>
+        <h1>用快捷鍵和實用網路技能，把 Mac 變成順手的工作台。</h1>
+        <p class="lede">
+          從 Command、Option、Control 的差異開始，學會日常操作、截圖、Finder、Safari/Chrome、文字編輯與安全上網。
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#shortcuts">開始學快捷鍵</a>
+          <a class="button secondary" href="#practice">看 7 天練習表</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section intro-grid" aria-label="Mac 快捷鍵基礎">
+        <div>
+          <p class="eyebrow">先認識按鍵符號</p>
+          <h2>Mac 的快捷鍵通常是「修飾鍵 + 動作鍵」。</h2>
+          <p>
+            例如複製是 <kbd>⌘</kbd> + <kbd>C</kbd>。先按住修飾鍵，再按最後一個字母或方向鍵，放開即可。
+          </p>
+        </div>
+        <div class="key-map">
+          <div><kbd>⌘</kbd><span>Command：最常用，像 Windows 的 Ctrl</span></div>
+          <div><kbd>⌥</kbd><span>Option：替代、進階或特殊輸入</span></div>
+          <div><kbd>⌃</kbd><span>Control：系統控制、搭配滑鼠右鍵選單</span></div>
+          <div><kbd>⇧</kbd><span>Shift：反向、選取、大小寫或延伸功能</span></div>
+          <div><kbd>Fn</kbd><span>功能鍵、表情符號、部分鍵盤動作</span></div>
+        </div>
+      </section>
+
+      <section id="shortcuts" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">快捷鍵字典</p>
+            <h2>搜尋或切換分類，先學最常用的就好。</h2>
+          </div>
+          <label class="search">
+            <span>搜尋快捷鍵</span>
+            <input id="shortcutSearch" type="search" placeholder="例如：截圖、貼上、Safari、Finder" />
+          </label>
+        </div>
+
+        <div class="filters" aria-label="快捷鍵分類">
+          <button class="filter active" data-filter="all">全部</button>
+          <button class="filter" data-filter="daily">日常</button>
+          <button class="filter" data-filter="text">文字</button>
+          <button class="filter" data-filter="finder">Finder</button>
+          <button class="filter" data-filter="window">視窗</button>
+          <button class="filter" data-filter="browser">瀏覽器</button>
+          <button class="filter" data-filter="screenshot">截圖</button>
+        </div>
+
+        <div class="shortcut-grid" id="shortcutGrid">
+          <article class="shortcut" data-category="daily text" data-keywords="複製 copy">
+            <div><h3>複製</h3><p>把選取的文字、檔案或圖片複製到剪貼簿。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>C</kbd></div>
+          </article>
+          <article class="shortcut" data-category="daily text" data-keywords="貼上 paste">
+            <div><h3>貼上</h3><p>把剪貼簿內容放到目前位置。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>V</kbd></div>
+          </article>
+          <article class="shortcut" data-category="daily text" data-keywords="剪下 cut">
+            <div><h3>剪下</h3><p>剪下文字；在 Finder 搭配貼上移動檔案。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>X</kbd></div>
+          </article>
+          <article class="shortcut" data-category="daily text" data-keywords="復原 undo">
+            <div><h3>復原</h3><p>救回上一個動作，寫文件和整理檔案都很好用。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>Z</kbd></div>
+          </article>
+          <article class="shortcut" data-category="daily" data-keywords="全選 select all">
+            <div><h3>全選</h3><p>選取目前文件、欄位或資料夾中的全部項目。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>A</kbd></div>
+          </article>
+          <article class="shortcut" data-category="daily" data-keywords="搜尋 find">
+            <div><h3>搜尋頁面或文件</h3><p>在網頁、PDF、文件或 Finder 視窗中找文字。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>F</kbd></div>
+          </article>
+          <article class="shortcut" data-category="daily" data-keywords="spotlight app 檔案">
+            <div><h3>開 Spotlight</h3><p>快速找 App、檔案、設定、換算單位。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>Space</kbd></div>
+          </article>
+          <article class="shortcut" data-category="daily window" data-keywords="切換 app">
+            <div><h3>切換 App</h3><p>在已開啟的 App 之間快速跳轉。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>Tab</kbd></div>
+          </article>
+          <article class="shortcut" data-category="window" data-keywords="關閉視窗 tab">
+            <div><h3>關閉目前視窗或分頁</h3><p>多數 App 關閉目前文件，瀏覽器關閉分頁。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>W</kbd></div>
+          </article>
+          <article class="shortcut" data-category="window" data-keywords="退出 quit app">
+            <div><h3>結束 App</h3><p>完整退出目前 App，而不是只關閉視窗。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>Q</kbd></div>
+          </article>
+          <article class="shortcut" data-category="window" data-keywords="強制結束 crash">
+            <div><h3>強制結束</h3><p>App 卡住時開啟強制結束視窗。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>⌥</kbd><kbd>Esc</kbd></div>
+          </article>
+          <article class="shortcut" data-category="screenshot" data-keywords="截圖 全螢幕">
+            <div><h3>全螢幕截圖</h3><p>截下整個螢幕畫面。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>⇧</kbd><kbd>3</kbd></div>
+          </article>
+          <article class="shortcut" data-category="screenshot" data-keywords="截圖 選取區域">
+            <div><h3>選取區域截圖</h3><p>拖曳框選要截下的範圍。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>⇧</kbd><kbd>4</kbd></div>
+          </article>
+          <article class="shortcut" data-category="screenshot" data-keywords="截圖 工具列 錄影">
+            <div><h3>截圖與錄影工具</h3><p>開啟截圖工具列，可錄螢幕或調整存放位置。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>⇧</kbd><kbd>5</kbd></div>
+          </article>
+          <article class="shortcut" data-category="finder" data-keywords="finder 新資料夾">
+            <div><h3>新增資料夾</h3><p>在 Finder 建立新資料夾。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>⇧</kbd><kbd>N</kbd></div>
+          </article>
+          <article class="shortcut" data-category="finder" data-keywords="finder quick look 預覽">
+            <div><h3>快速預覽</h3><p>選到檔案後按空白鍵，不開 App 也能看內容。</p></div>
+            <div class="combo"><kbd>Space</kbd></div>
+          </article>
+          <article class="shortcut" data-category="finder" data-keywords="finder 移動檔案">
+            <div><h3>移動已複製的檔案</h3><p>先複製檔案，再到目的地用這組快捷鍵移動。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>⌥</kbd><kbd>V</kbd></div>
+          </article>
+          <article class="shortcut" data-category="browser" data-keywords="safari chrome 新分頁 tab">
+            <div><h3>新分頁</h3><p>Safari 和 Chrome 都適用。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>T</kbd></div>
+          </article>
+          <article class="shortcut" data-category="browser" data-keywords="safari chrome 網址列">
+            <div><h3>選取網址列</h3><p>立刻輸入網址或搜尋關鍵字。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>L</kbd></div>
+          </article>
+          <article class="shortcut" data-category="browser" data-keywords="safari chrome 重新整理 reload">
+            <div><h3>重新整理網頁</h3><p>頁面卡住或內容未更新時使用。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>R</kbd></div>
+          </article>
+          <article class="shortcut" data-category="browser" data-keywords="safari chrome 上一頁 下一頁">
+            <div><h3>上一頁 / 下一頁</h3><p>不碰滑鼠也能回到剛剛的頁面。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>[</kbd><span>/</span><kbd>⌘</kbd><kbd>]</kbd></div>
+          </article>
+          <article class="shortcut" data-category="text" data-keywords="文字 游標 行首 行尾">
+            <div><h3>到行首 / 行尾</h3><p>寫文字時快速移動游標。</p></div>
+            <div class="combo"><kbd>⌘</kbd><kbd>←</kbd><span>/</span><kbd>⌘</kbd><kbd>→</kbd></div>
+          </article>
+          <article class="shortcut" data-category="text" data-keywords="刪除 單字">
+            <div><h3>刪除前一個單字</h3><p>比一直按 Delete 更快。</p></div>
+            <div class="combo"><kbd>⌥</kbd><kbd>Delete</kbd></div>
+          </article>
+        </div>
+        <p class="empty" id="emptyState" hidden>找不到符合的快捷鍵。試試「截圖」「Finder」「Safari」或「複製」。</p>
+      </section>
+
+      <section id="practice" class="section practice">
+        <div>
+          <p class="eyebrow">7 天練習路線</p>
+          <h2>每天 10 分鐘，先把手感養起來。</h2>
+        </div>
+        <ol class="timeline">
+          <li><strong>第 1 天：</strong>⌘C、⌘V、⌘Z、⌘A、⌘F。</li>
+          <li><strong>第 2 天：</strong>⌘Space 開 App、⌘Tab 切換 App、⌘W 關分頁。</li>
+          <li><strong>第 3 天：</strong>截圖三件套：⌘⇧3、⌘⇧4、⌘⇧5。</li>
+          <li><strong>第 4 天：</strong>Finder：Space 預覽、⌘⇧N 新資料夾、⌘⌥V 移動檔案。</li>
+          <li><strong>第 5 天：</strong>瀏覽器：⌘L、⌘T、⌘R、⌘[、⌘]。</li>
+          <li><strong>第 6 天：</strong>文字游標：⌘←、⌘→、⌥Delete。</li>
+          <li><strong>第 7 天：</strong>把常用 App 的選單打開，看右側顯示的快捷鍵並挑 3 個加入習慣。</li>
+        </ol>
+      </section>
+
+      <section id="web-skills" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">網路上實用的技能</p>
+            <h2>會用 Mac，也要會聰明上網。</h2>
+          </div>
+        </div>
+        <div class="skill-grid">
+          <article>
+            <h3>搜尋技巧</h3>
+            <p>用雙引號搜尋完整詞句，例如 <code>"Mac shortcut"</code>；用 <code>site:apple.com</code> 限定官方網站；用減號排除不想看的字。</p>
+          </article>
+          <article>
+            <h3>分辨可信資料</h3>
+            <p>優先看官方文件、學校、政府、原始發布者。遇到教學文，確認日期、適用版本，以及留言中是否有人回報失效。</p>
+          </article>
+          <article>
+            <h3>密碼與安全</h3>
+            <p>每個重要網站使用不同密碼，開啟雙重驗證。不要在陌生表單輸入 Apple ID、銀行或簡訊驗證碼。</p>
+          </article>
+          <article>
+            <h3>下載 App 前檢查</h3>
+            <p>盡量從 App Store 或開發者官網下載。看到「免費破解」「立即清理病毒」這類字眼，先停一下再查證。</p>
+          </article>
+          <article>
+            <h3>瀏覽器分頁管理</h3>
+            <p>用書籤整理常用網站，用閱讀列表保存稍後看的文章。分頁太多時，用搜尋分頁或直接關掉可重找的頁面。</p>
+          </article>
+          <article>
+            <h3>雲端與備份</h3>
+            <p>重要檔案至少有兩份：Mac 本機一份、iCloud Drive/Google Drive/外接硬碟一份。同步不是完整備份，誤刪也會同步。</p>
+          </article>
+          <article>
+            <h3>AI 工具提問</h3>
+            <p>把目標、限制、範例一起說清楚，例如「我是 Mac 新手，請用 5 步驟教我設定截圖存放位置」。</p>
+          </article>
+          <article>
+            <h3>網頁變成 App</h3>
+            <p>Safari 可把常用網站加入 Dock，讓 Gmail、Notion、YouTube 等網站像 App 一樣開啟。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="apps" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Mac 必裝推薦</p>
+            <h2>先裝少一點，等真的遇到需求再加。</h2>
+          </div>
+          <p class="section-note">建議優先從 App Store 或官方網站下載，避免下載站包進廣告軟體。</p>
+        </div>
+        <div class="app-grid">
+          <article class="app-card essential">
+            <div class="app-topline"><span>必裝</span><small>視窗管理</small></div>
+            <h3>Rectangle</h3>
+            <p>讓 Mac 視窗可以像 Windows 一樣左右分割、最大化、用快捷鍵快速排列。</p>
+            <a href="https://rectangleapp.com/">官方下載</a>
+          </article>
+          <article class="app-card essential">
+            <div class="app-topline"><span>必裝</span><small>密碼安全</small></div>
+            <h3>Bitwarden</h3>
+            <p>幫每個網站建立不同強密碼，並跨裝置同步。新手最該先養成的安全習慣。</p>
+            <a href="https://bitwarden.com/download/">官方下載</a>
+          </article>
+          <article class="app-card essential">
+            <div class="app-topline"><span>必裝</span><small>卸載工具</small></div>
+            <h3>AppCleaner</h3>
+            <p>移除 App 時順手清掉偏好設定、快取等殘留檔案，適合常試新軟體的人。</p>
+            <a href="https://freemacsoft.net/appcleaner/">官方下載</a>
+          </article>
+          <article class="app-card">
+            <div class="app-topline"><span>效率</span><small>啟動器</small></div>
+            <h3>Raycast</h3>
+            <p>Spotlight 的進階版，可開 App、算式、剪貼簿、視窗管理與擴充功能。</p>
+            <a href="https://www.raycast.com/">官方下載</a>
+          </article>
+          <article class="app-card">
+            <div class="app-topline"><span>筆記</span><small>知識整理</small></div>
+            <h3>Obsidian</h3>
+            <p>本機 Markdown 筆記工具，適合整理學習筆記、工作資料和長期知識庫。</p>
+            <a href="https://obsidian.md/download">官方下載</a>
+          </article>
+          <article class="app-card">
+            <div class="app-topline"><span>影音</span><small>播放器</small></div>
+            <h3>IINA</h3>
+            <p>現代 macOS 影音播放器，支援多數影片格式，介面比傳統播放器更像 Mac。</p>
+            <a href="https://iina.io/">官方下載</a>
+          </article>
+          <article class="app-card">
+            <div class="app-topline"><span>開發</span><small>文字編輯</small></div>
+            <h3>Visual Studio Code</h3>
+            <p>如果你會寫程式、改網頁或整理文字檔，VS Code 是最通用的免費編輯器。</p>
+            <a href="https://code.visualstudio.com/download">官方下載</a>
+          </article>
+          <article class="app-card">
+            <div class="app-topline"><span>雲端</span><small>依需求</small></div>
+            <h3>Google Drive / Dropbox</h3>
+            <p>需要跨電腦、手機同步檔案時再裝。若只用 Apple 裝置，先試 iCloud Drive。</p>
+            <a href="https://www.google.com/drive/download/">Google Drive</a>
+          </article>
+        </div>
+        <div class="install-tip">
+          <h3>新手安裝順序</h3>
+          <p>先裝 Rectangle、Bitwarden、AppCleaner。用一週後，如果覺得 Spotlight 不夠快，再裝 Raycast；需要筆記、影音或寫程式時，再加 Obsidian、IINA、VS Code。</p>
+        </div>
+      </section>
+
+      <section class="section cheat-sheet" aria-label="最值得背的十個快捷鍵">
+        <p class="eyebrow">先背這 10 個</p>
+        <h2>新手最划算快捷鍵</h2>
+        <div class="rank-list">
+          <span><kbd>⌘</kbd><kbd>Space</kbd> Spotlight</span>
+          <span><kbd>⌘</kbd><kbd>C</kbd> 複製</span>
+          <span><kbd>⌘</kbd><kbd>V</kbd> 貼上</span>
+          <span><kbd>⌘</kbd><kbd>Z</kbd> 復原</span>
+          <span><kbd>⌘</kbd><kbd>F</kbd> 搜尋</span>
+          <span><kbd>⌘</kbd><kbd>Tab</kbd> 切 App</span>
+          <span><kbd>⌘</kbd><kbd>W</kbd> 關分頁</span>
+          <span><kbd>⌘</kbd><kbd>⇧</kbd><kbd>4</kbd> 截區域</span>
+          <span><kbd>⌘</kbd><kbd>L</kbd> 網址列</span>
+          <span><kbd>Space</kbd> Finder 預覽</span>
+        </div>
+      </section>
+
+      <section id="sources" class="section sources">
+        <p class="eyebrow">參考來源</p>
+        <h2>內容依官方文件整理，並轉成新手路線。</h2>
+        <ul>
+          <li><a href="https://support.apple.com/en-us/102650">Apple Support：Mac keyboard shortcuts</a></li>
+          <li><a href="https://support.apple.com/guide/mac-help/intro-to-mac-keyboard-shortcuts-mchld6b9e240/mac">Apple Support：Intro to Mac keyboard shortcuts</a></li>
+          <li><a href="https://support.apple.com/guide/safari/keyboard-shortcuts-and-gestures-cpsh003/mac">Apple Support：Safari keyboard shortcuts and gestures</a></li>
+          <li><a href="https://support.google.com/accessibility/answer/157179">Google Help：Chrome keyboard shortcuts</a></li>
+          <li><a href="https://rectangleapp.com/">Rectangle：Mac window manager</a></li>
+          <li><a href="https://www.raycast.com/">Raycast：Productivity launcher</a></li>
+          <li><a href="https://bitwarden.com/download/">Bitwarden：Password manager downloads</a></li>
+          <li><a href="https://freemacsoft.net/appcleaner/">FreeMacSoft：AppCleaner</a></li>
+          <li><a href="https://iina.io/">IINA：Modern media player for macOS</a></li>
+          <li><a href="https://obsidian.md/download">Obsidian：Download</a></li>
+          <li><a href="https://code.visualstudio.com/download">Visual Studio Code：Download</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>給 Mac 新手：先不用追求全背，讓最常用的 10 個快捷鍵變成肌肉記憶就贏一半。</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "mac-starter-shortcuts-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mac 新手快捷鍵與上網技能教學網站",
+  "scripts": {
+    "start": "python3 -m http.server 4173 -d ."
+  }
+}

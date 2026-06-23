@@ -24,6 +24,10 @@ npm start
 http://127.0.0.1:4173/
 ```
 
+## 線上網站
+
+https://markkuowwe.github.io/mac-starter-site/
+
 ## 維護規則
 
 未來每次更新網站內容、樣式、功能或推薦連結時，都要同步更新本 README 的「更新紀錄」。
@@ -35,6 +39,12 @@ http://127.0.0.1:4173/
 - 主要影響範圍
 
 ## 更新紀錄
+
+### 2026-06-23
+
+- 啟用 GitHub Pages，來源設定為 `main` 分支根目錄 `/`。
+- 確認線上網站 `https://markkuowwe.github.io/mac-starter-site/` 從 404 恢復為 200。
+- README 新增線上網站網址，方便後續檢查部署狀態。
 
 ### 2026-06-21
 
